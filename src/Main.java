@@ -2,11 +2,11 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(printInfo(20,25));
-        System.out.println(printInfo(22,21));
-        System.out.println(printInfo(10,15));
-        System.out.println(printInfo(13,32));
-        System.out.println(printInfo(generateRandomAge(),18));
+        System.out.println(printInfo(20, 25));
+        System.out.println(printInfo(22, 21));
+        System.out.println(printInfo(10, 15));
+        System.out.println(printInfo(13, 32));
+        System.out.println(printInfo(generateRandomAge(), 18));
 
     }
 
@@ -20,16 +20,15 @@ public class Main {
         } else if (age > 45 && temperature > -10 && temperature < 25) {
             return canWalk;
         } else {
-            return"Оставайтесь дома!";
+            return "Оставайтесь дома!";
         }
-}
-public static int generateRandomAge(){
-    Random age = new Random();
-    return age.nextInt(20);
+    }
 
-}
+    public static int generateRandomAge() {
+        Random age = new Random();
+        return age.nextInt(20);
 
-
+    }
 }
 
 
